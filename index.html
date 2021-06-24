@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start Head -->
+
+<head>
+    <!-- Extra Information -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" href="Favicon/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Start Title -->
+    <title>Calculator</title>
+</head>
+
+<!-- Start Body -->
+
+<body>
+
+    <!-- Start Calculator -->
+    <div class="main-calc">
+
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="wrapper">
+        <div>
+            <input type="text" name="value" id="uservalue" placeholder="0">
+        </div>
+
+        <div>
+            <button class="button-clear"  onclick="clearresult()">c</button>
+            <button class="button-divid operator" onclick="getvalue('/')">/</button>
+        </div>
+
+        <div>
+            <button onclick="getvalue('7')">7</button>
+            <button onclick="getvalue('8')">8</button>
+            <button onclick="getvalue('9')">9</button>
+            <button class="operator" onclick="getvalue('*')">X</button>
+        </div>
+
+        <div>
+            <button onclick="getvalue('4')">4</button>
+            <button onclick="getvalue('5')">5</button>
+            <button onclick="getvalue('6')">6</button>
+            <button class="operator" onclick="getvalue('-')">-</button>
+        </div>
+
+        <div>
+            <button onclick="getvalue('1')">1</button>
+            <button onclick="getvalue('2')">2</button>
+            <button onclick="getvalue('3')">3</button>
+            <button class="operator" onclick="getvalue('+')">+</button>
+        </div>
+
+        <div>
+            <button onclick="getvalue('0')">0</button>
+            <button onclick="getvalue('00')">00</button>
+            <button onclick="getvalue('.')">.</button>
+            <button class="operator" onclick="getresult()">=</button>
+        </div>
+        
+
+    </div>
+
+
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
